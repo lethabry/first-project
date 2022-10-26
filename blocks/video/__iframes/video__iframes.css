@@ -1,0 +1,15 @@
+.video__iframes{
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  /* Чтобы абсолютный элемент встал между двумя секциями при это cохраняя все отступы я спозиционировала элемент от начала границы на сумму высот всех элементов и их отступов
+  100px+60*1.15+20px+34px+50px=273px*/
+  top: 273px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
