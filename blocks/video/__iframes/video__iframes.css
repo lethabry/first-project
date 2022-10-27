@@ -3,10 +3,8 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 0;
+  margin: 50px auto -50px;
   padding: 0;
   list-style: none;
-  margin: 50px auto -50px;
 }
-
 
