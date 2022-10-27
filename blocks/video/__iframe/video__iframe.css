@@ -1,0 +1,6 @@
+/* Ширина и высота объектов перенесены из HTML в CSS */
+.video__iframe{
+  width: 515px;
+  height: 316px;
+}
+

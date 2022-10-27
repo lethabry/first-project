@@ -1,6 +1,7 @@
 .feynman__title{
   margin: 100px 0 70px 0;
-  width: 648px;
+  /* Исправлено свойство на max-width */
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;

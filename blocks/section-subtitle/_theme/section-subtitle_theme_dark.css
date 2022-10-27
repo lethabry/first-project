@@ -1,0 +1,5 @@
+.section-subtitle_theme_dark{
+  color: #ffffff;
+  /* Задан z-index для того, чтобы треугольник не перекрывал текст */
+  z-index: 1;
+}

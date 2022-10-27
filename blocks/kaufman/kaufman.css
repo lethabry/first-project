@@ -1,9 +1,9 @@
-.kaufman{
+.kaufman {
+  /* Удален лишний отступ */
   background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   position: relative;
   margin: auto;
   overflow: hidden;
-  padding-bottom: 90px;
 }

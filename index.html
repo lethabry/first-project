@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="./index.css">
   <title>Научиться учиться</title>
 </head>
-
-<body>
-  <div class="page">
+<!-- Удален тег div class="page", класс присвоен тегу body -->
+<body class="page">
     <header class="header">
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
@@ -87,12 +86,16 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe class="video__iframe" id="ytplayer1" width="515" height="316"
-            src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
-          <iframe class="video__iframe" id="ytplayer2" width="515" height="316"
-            src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
-        </div>
+        <!-- Добавлен немаркированный список -->
+        <!-- Удалены атрибуты ширины и высоты, значения указаны в CSS, атрибут allowfullscreen исправлен -->
+        <ul class="video__iframes">
+          <li>
+            <iframe class="video__iframe" id="ytplayer1" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="fullscreen"></iframe>
+          </li>
+          <li>
+            <iframe class="video__iframe" id="ytplayer2" src="https://www.youtube.com/embed/arj7oStGLkU" allow="fullscreen"></iframe>
+          </li>
+        </ul>
       </section>
       <section class="oakley">
         <div class="two-columns">
@@ -170,13 +173,18 @@
       </section>
       <section class="khan">
         <div class="khan__container">
-          <h3 class="khan__author">Салман Хан</h3>
+          <!-- изменен тег с h3 на p -->
+          <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__qoute">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру.
-            Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут
-            получить навыки и знания, которые приносят успех в школе, карьере и жизни.
-          </p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <!-- добавлен тег blockquote-->
+          <blockquote class="khan__blockquote">
+            <p class="khan__qoute">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру.
+              Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут
+              получить навыки и знания, которые приносят успех в школе, карьере и жизни.
+            </p>
+          </blockquote>
+          <!-- исправлен тег с p на h3  -->
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Салман Хан Весь мир-школа">
@@ -234,7 +242,8 @@
           </li>
         </ul>
         <!-- Изменен тег img на div -->
-        <div class="kaufman-triangle rotation"></div>
+        <!-- Исправлена ошибка записи блока и элемента -->
+        <div class="kaufman__triangle rotation"></div>
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
@@ -242,22 +251,23 @@
         <ul class="resources__logo-zone">
           <li>
             <a class="resources__link" href="#" target="_blank" rel="noopener">
-              <img src="./images/logo/resources-arzamas.svg" alt="Логотип Арзамас">
+              <!-- Добавлен класс для картинок, заданы размеры в CSS -->
+              <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Логотип Арзамас">
             </a>
           </li>
           <li>
             <a class="resources__link" href="#" target="_blank" rel="noopener">
-              <img src="./images/logo/resources-n1.svg" alt="Логотип Н+1">
+              <img class="resources__logo"src="./images/logo/resources-n1.svg" alt="Логотип Н+1">
             </a>
           </li>
           <li>
             <a class="resources__link" href="#" target="_blank" rel="noopener">
-              <img src="./images/logo/resources-strelka.svg" alt="Стрелка">
+              <img class="resources__logo"src="./images/logo/resources-strelka.svg" alt="Стрелка">
             </a>
           </li>
           <li>
             <a class="resources__link" href="#" target="_blank" rel="noopener">
-              <img src="./images/logo/resources-polka.svg" alt="Логотип Полка">
+              <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Логотип Полка">
             </a>
           </li>
         </ul>
@@ -274,7 +284,8 @@
         </div>
         <!-- Исправлен класс согласно брифу -->
         <div class="footer__column footer__column_content_info">
-          <h3 class="footer__column-heading">О Практикуме</h3>
+          <!-- Исправлен тег h3 на h2 -->
+          <h2 class="footer__column-heading">О Практикуме</h2>
           <!-- Исправлен тег div на nav -->
           <nav>
             <!-- Добавлен маркированный список -->
@@ -292,7 +303,8 @@
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
-          <h3 class="footer__column-heading">Соцсети</h3>
+          <!-- Исправлен тег h3 на h2 -->
+          <h2 class="footer__column-heading">Соцсети</h2>
           <!-- Исправлен тег div на nav -->
           <nav>
             <!-- Добавлен маркированный список -->
@@ -317,7 +329,5 @@
         </div>
       </div>
     </footer>
-  </div>
 </body>
-
 </html>
